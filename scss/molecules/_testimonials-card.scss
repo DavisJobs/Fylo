@@ -1,0 +1,43 @@
+.testimonials-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 2rem;
+    background: map-get($colors-primary, "testimonials" );
+    margin: 0 1rem;
+    @include transition-300;
+    @include media-queries(1151px) {
+        margin: 2rem;
+    }
+    @include media-queries(814px) {
+        max-width: 500px;
+        margin: 2rem;
+    }
+
+    /* TODO: ARREGLAR LAS CARDS  */
+
+    &:hover {
+        box-shadow: $box-shadow rgba(0,0,0,.1);
+    }
+
+    .testimonial-profile { 
+        @include flex-ai-c;
+        
+        .testimonial-text {
+            font-size: 1.6rem;
+        }
+
+        img {
+            width: 5rem;
+            border-radius: 100%;
+        }
+
+        .testimonial-name {
+            padding-left: 1rem;
+
+            h5 {
+                margin: 0;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}

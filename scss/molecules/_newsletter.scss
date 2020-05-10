@@ -1,0 +1,28 @@
+ // TODO: NEWSLETTER
+ .newsletter {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 4rem;
+    background: map-get($colors-primary, "email");
+    box-shadow: $box-shadow rgba(0,0,0,0.2);
+    border-radius: 5px;
+    transform: translateY(10rem);
+
+    .newsletter-content {
+        text-align: center;
+
+        .newsletter-title {
+            h4 {
+                font-size: 3.4rem;
+            }
+        }
+
+        .newsletter-text {
+            p {
+                font-size: 1.8rem;
+                padding: 1rem 0;
+            }
+        }
+    }
+}

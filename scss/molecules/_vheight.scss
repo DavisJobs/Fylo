@@ -1,0 +1,8 @@
+.vh {
+    
+    padding: 2rem 0;
+
+    @include media-queries("tablet") {
+        padding: 1rem 0;
+    }
+}

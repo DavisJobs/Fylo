@@ -1,0 +1,16 @@
+.button-global {
+  display: inline-block;
+  padding: $button-padding;
+  background: map-get($colors-accent, "Blue");
+  color: map-get($colors-neutral, "white");
+  font-size: pixelToRem(16);
+  border-radius: $border-radius;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  @include transition-300;
+
+  &:hover {
+    background: rgb(18, 110, 138);
+  }
+}

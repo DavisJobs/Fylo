@@ -1,0 +1,43 @@
+header {
+    padding: 2rem 0;
+    @include media-queries("tablet") {
+        padding: 0.6rem 0;
+    }
+
+    .container {
+        @include flex-jc-sb-ai-c;
+    }
+
+    .logo {
+        margin: 0;
+
+        @include media-queries("tablet") {
+            img {
+                width: 150px;
+            }
+        }
+        @include media-queries("tablet-regular") {
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .nav {
+
+        .nav-list {
+            @include d-flex;
+
+            .nav-item {
+                margin: 0 2.5rem;
+                @include media-queries(400px) {
+                    margin: 0 1rem;
+                }
+
+                .nav-link {
+                }
+            }
+        }
+    }
+}
+ 

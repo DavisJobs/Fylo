@@ -1,0 +1,23 @@
+
+/* TODO: Font Face */
+ 
+
+// Font Raleway
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('#{$url-base}raleway-regular-webfont.woff2') format('woff2'),
+         url('#{$url-base}raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Font Open Sans
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('#{$url-base}opensans-regular-webfont.woff2') format('woff2'),
+         url('#{$url-base}opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

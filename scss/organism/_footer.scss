@@ -1,0 +1,91 @@
+.footer {
+    padding-top: 8rem;
+    background: map-get($colors-primary, "footer" );
+    
+
+    .container {
+        padding: 8rem 0;
+    }
+
+    .footer-content { 
+        justify-content: space-between;
+        @include media-queries(950px) {
+            flex-direction: column;
+
+            .footer-contact {
+                padding: 2rem 0;
+            }
+
+            .footer-social {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    
+
+    .footer-info {
+        width: 100%;
+        max-width: 200px;
+
+        .text {
+            padding-left: 2rem;
+            line-height: 2rem;
+        }
+    }
+
+    .footer-contact {
+      
+       padding: 0 1rem;
+        .footer-phone {
+            align-items: center;
+            p {
+                margin: 0;
+                padding-left: 1rem;
+            }
+        }
+        .footer-mail {
+            @extend .footer-phone;
+            padding-top: 2.2rem;
+        }
+    }
+
+    .footer-nav {
+        @include media-queries(950px) {
+            flex-direction: column;
+        }
+        
+        ul {
+            padding: 0 4rem;
+            @include media-queries(950px) {
+                padding: 0;
+            }
+            
+
+            li {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    .footer-social {
+        @include media-queries("phone-regular") {
+            text-align: center;
+        }
+
+        .item-social {
+            position: relative;
+            margin: 0 1rem;
+            padding: 1.6rem;
+            border-radius: $border-radius-rounded;
+            border: 1px solid map-get($colors-neutral, "white");
+            cursor: pointer;
+
+            .social-link {
+                position: absolute;
+                margin: -0.8rem -0.6rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+//mixin responsive web design
+@mixin media-queries($breakpoint) {
+
+ @if map-has-key($breakpoints , $breakpoint) {
+        @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    // comprueba que los parametros sea texto definido o numeros en pixeles.
+    } @else if type-of($breakpoint) == number and unit($breakpoint) == 'px' {
+        @media screen and (max-width: $breakpoint) {
+            @content;
+        }
+    }
+ }
+
+@mixin flex-jc-sb-ai-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-fw-w-jc-c{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+@mixin flex-ai-c {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-fw-w {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin d-flex {
+    display: flex;
+}
+
+// TODO: Transition
+@mixin transition-300 {
+    transition: all 300ms ease;
+}

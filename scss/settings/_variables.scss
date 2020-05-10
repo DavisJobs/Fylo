@@ -1,0 +1,134 @@
+@import "../tools/tools-core";
+/* 
+    TODO: 
+    GLOBALS 
+*/
+ 
+/* 
+    TODO: 
+    URL 
+*/
+ $url-base: "http://127.0.0.1:5500";
+ 
+
+ /* 
+    TODO: 
+    COLORS 
+ */
+ $colors-primary : (
+    "email":  hsl(217, 28%, 15%),
+    "main": hsl(218, 28%, 13%),
+    "footer": hsl(216, 53%, 9%),
+    "testimonials": hsl(219, 30%, 18%)
+ );
+
+ $colors-accent: (
+    "Cyan": hsl(176, 68%, 64%),
+    "Blue": hsl(198, 60%, 50%)
+ );
+
+ $colors-neutral: (
+    "white": hsl(0, 0%, 100%)
+ );
+
+ 
+/* 
+    TODO: 
+    FONT FAMILY  
+    GLOBAL & BASE
+*/
+ $font-family-global: 'open_sansregular';
+ $font-family-primary: 'ralewayregular';
+
+/* 
+    TODO: 
+    FONT SIZE 
+*/
+ $font-size-base: 62.5%;
+ $font-size-global: pixelToRem(14);
+ $font-size-h1: pixelToRem(32);
+ $font-size-h2: pixelToRem(26);
+ $font-size-h3: pixelToRem(24);
+ $font-size-h4: pixelToRem(20);
+ $font-size-h5: pixelToRem(18);
+ $font-size-h6: pixelToRem(16);
+ $font-size-p: $font-size-global;
+
+/*
+    TODO:
+    LINE HEIGHT
+*/
+$line-height-h1: pixelToRem(38);
+$line-height-h2: pixelToRem(32);
+$line-height-h3: pixelToRem(30);
+$line-height-h4: pixelToRem(26);
+$line-height-h5: pixelToRem(24);
+$line-height-h6: pixelToRem(22);
+$line-height-p: pixelToRem(20);
+
+/*
+ TODO:
+ FONT SIZE - MEASURE
+*/
+$measure: "rem";
+
+
+/*
+    TODO:
+    FONTS - MARGIN
+*/
+$margin-bottom-h1: pixelToRem(20);
+$margin-bottom-h2: pixelToRem(20);
+$margin-bottom-h3: pixelToRem(20);
+$margin-bottom-h4: pixelToRem(20);
+$margin-bottom-h5: pixelToRem(20);
+$margin-bottom-h6: pixelToRem(20);
+
+$margin-top-bottom-p: pixelToRem(20);
+
+/* 
+    TODO: 
+    Font Weight 
+*/
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+/*
+    TODO:
+    MEDIA-QUERIES
+*/
+$breakpoints: (
+    "phone-small": 320px,
+    "phone-regular": 480px,
+    "tablet-regular": 767px,
+    "tablet": 1024px,
+    "desktop": 1280px
+);
+
+
+/* 
+    TODO:
+    BUTTONS
+*/
+
+$button-padding: 1.5rem 7rem;
+
+
+
+/* 
+    TODO:
+    BORDER RADIUS
+*/
+$border-radius: 3rem;
+$border-radius-rounded: 5rem;
+
+/* 
+    TODO:
+    BOX SHADOW
+*/
+
+$box-shadow: 0 1rem 2rem 1rem;             
